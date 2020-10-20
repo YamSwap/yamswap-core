@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32c230c-ee35-457a-a40a-8dcd6926dab9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contracts/IERC20.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/libraries/Math.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/libraries/SafeMath.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/IERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/interface/IERC20.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Solidity Library" />
         <option value="Solidity Contract" />
       </list>
     </option>
@@ -41,6 +45,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/contracts/interface" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
@@ -62,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603174251120</updated>
-      <workItem from="1603174252906" duration="1529000" />
+      <workItem from="1603174252906" duration="3333000" />
     </task>
     <servers />
   </component>
