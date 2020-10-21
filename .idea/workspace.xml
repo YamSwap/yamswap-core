@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32c230c-ee35-457a-a40a-8dcd6926dab9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/contracts/IERC20.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/contracts/Math.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/contracts/Migrations.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/contracts/SafeMath.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/YamswapERC20.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/interface/IYamswapERC20.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/contracts/IYamswapFactory.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/contracts/YamswapFactory.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/YamswapFactory.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/YamswapPair.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/interface/IYamswapFactory.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/interface/IYamswapPair.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/libraries/Math.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/libraries/Math.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Math.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Math.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Migrations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/SafeMath.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -57,13 +61,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,7 +83,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603174251120</updated>
-      <workItem from="1603174252906" duration="12821000" />
+      <workItem from="1603174252906" duration="16114000" />
+      <workItem from="1603274063993" duration="33000" />
     </task>
     <servers />
   </component>
@@ -86,5 +93,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="325" y="215" key="IDE.errors.dialog" timestamp="1603265938527">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="325" y="215" key="IDE.errors.dialog/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1603265938527" />
   </component>
 </project>
