@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32c230c-ee35-457a-a40a-8dcd6926dab9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/contracts/IYamswapFactory.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/contracts/YamswapFactory.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/YamswapFactory.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/YamswapPair.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/interface/IYamswapFactory.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/interface/IYamswapPair.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/IERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC20.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/Math.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Math.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Migrations.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/SafeMath.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/YamswapPair.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/YamswapPair.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Solidity Library" />
         <option value="Solidity Contract" />
+        <option value="Solidity Library" />
       </list>
     </option>
   </component>
@@ -61,15 +50,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,7 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603174251120</updated>
       <workItem from="1603174252906" duration="16114000" />
-      <workItem from="1603274063993" duration="33000" />
+      <workItem from="1603274063993" duration="6409000" />
+      <workItem from="1605064645694" duration="819000" />
     </task>
     <servers />
   </component>
@@ -95,9 +83,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="325" y="215" key="IDE.errors.dialog" timestamp="1603265938527">
+    <state x="325" y="215" key="IDE.errors.dialog" timestamp="1605065068488">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="325" y="215" key="IDE.errors.dialog/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1603265938527" />
+    <state x="325" y="215" key="IDE.errors.dialog/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605065068488" />
   </component>
 </project>
