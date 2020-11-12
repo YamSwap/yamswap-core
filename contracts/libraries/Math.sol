@@ -6,6 +6,7 @@ library Math {
     }
 
     // babylonian method (https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method)
+    // 利用巴比伦法求平方根
     function sqrt(uint y) internal pure returns (uint z) {
         if (y > 3) {
             z = y;

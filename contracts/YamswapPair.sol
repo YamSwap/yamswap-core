@@ -11,8 +11,12 @@ import "./libraries/SafeMath.sol";
 import "./libraries/UQ112x112.sol";
 import "./interface/IERC20.sol";
 import "./interface/IYamswapCallee.sol";
+import "./interface/IYamswapFactory.sol";
+import "./libraries/Math.sol";
+import "./interface/IYamswapPair.sol";
+import "./YamswapERC20.sol";
 
-contract YamswapPair {
+contract YamswapPair is IYamswapPair, YamswapERC20{
 
     using SafeMath for uint;
     using UQ112x112 for uint224;
@@ -92,6 +96,26 @@ contract YamswapPair {
         reserve1 = uint112(balance1);
         blockTimestampLast = blockTimestamp;
         emit Sync(reserve0, reserve1);
+    }
+
+    function _mintFee(uint112 _reserve0, uint112 _reserve1) private returns (bool feeOn) {
+        address feeTo = IYamswapFactory(factory).feeTo();
+        feeOn = feeTo != address(0);
+        uint _kLast = kLast;
+        if(feeOn) {
+            if (_kLast != 0) {
+                uint rootK = Math.sqrt(uint(_reserve0).mul(_reserve1));
+                uint rootKLast = Math.sqrt(_kLast);
+                if (rootK > rootKLast) {
+                    uint numerator = totalSupply.mul(rootK.sub(rootKLast));
+                    uint denominator = rootK.mul(5).add(rootKLast);
+                    uint liquidity = numerator / denominator;
+                    if (liquidity > 0) _mint(feeTo, liquidity);
+                }
+            }
+        } else if (_kLast != 0) {
+            kLast = 0;
+        }
     }
 
     function swap(uint amount0Out, uint amount1Out, address to, bytes calldata data) external lock {
