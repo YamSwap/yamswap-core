@@ -50,21 +50,6 @@
       <recent name="$PROJECT_DIR$/contracts/interface" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +61,9 @@
       <workItem from="1603174252906" duration="16114000" />
       <workItem from="1603274063993" duration="6409000" />
       <workItem from="1605064645694" duration="9392000" />
-      <workItem from="1605242202638" duration="3172000" />
+      <workItem from="1605242202638" duration="4790000" />
+      <workItem from="1605254273235" duration="130000" />
+      <workItem from="1605254427409" duration="2532000" />
     </task>
     <servers />
   </component>
@@ -87,10 +74,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="325" y="215" key="IDE.errors.dialog" timestamp="1605065068488">
+    <state x="325" y="215" key="IDE.errors.dialog" timestamp="1605254396322">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="325" y="215" key="IDE.errors.dialog/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605065068488" />
+    <state x="325" y="215" key="IDE.errors.dialog/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605254396322" />
     <state x="212" y="25" width="1255" height="903" key="SettingsEditor" timestamp="1605248096456">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

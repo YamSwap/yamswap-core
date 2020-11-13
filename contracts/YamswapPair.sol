@@ -61,7 +61,7 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
     }
 
     event Mint(address indexed sender, uint amount0, uint amount1);
-
+    event Burn(address indexed sender, uint amount0, uint amount1, address indexed to);
     event Swap(
         address indexed sender,
         uint amount0In,
@@ -141,6 +141,30 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
         _update(balance0, balance1, _reserve0, _reserve1);
         if (feeOn) kLast = uint(reserve0).mul(reserve1);
         emit Mint(msg.sender, amount0, amount1);
+    }
+
+    function burn(address to) external lock returns (uint amount0, uint amount1) {
+        (uint112 _reserve0, uint112 _reserve1, ) = getReserves();   // 节约gas
+        address _token0 = token0;                                   // 节约gas
+        address _token1 = token1;                                   // 节约gas
+        uint balance0 = IERC20(_token0).balanceOf(address(this));
+        uint balance1 = IERC20(_token1).balanceOf(address(this));
+        uint liquidity = balanceOf[address(this)];
+
+        bool feeOn = _mintFee(_reserve0, _reserve1);
+        uint _totalSupply = totalSupply; // 节约gas，必须在这里定义，因为在_mintFee中totalSupply已经被更新了
+        amount0 = liquidity.mul(balance0) / _totalSupply; // 使用余额确保按比例分配
+        amount1 = liquidity.mul(balance1) / _totalSupply; // 使用余额确保按比例分配
+        require(amount0 > 0 && amount1 > 0, 'Yamswap: INSUFFICIENT_LIQUIDITY_BURNED');
+        _burn(address(this), liquidity);
+        _safeTransfer(_token0, to, amount0);
+        _safeTransfer(_token1, to, amount1);
+        balance0 = IERC20(_token0).balanceOf(address(this));
+        balance1 = IERC20(_token1).balanceOf(address(this));
+
+        _update(balance0, balance1, _reserve0, _reserve1);
+        if (feeOn) kLast = uint(reserve0).mul(reserve1);
+        emit Burn(msg.sender, amount0, amount1, to);
     }
 
     function swap(uint amount0Out, uint amount1Out, address to, bytes calldata data) external lock {
