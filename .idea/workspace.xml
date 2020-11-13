@@ -4,7 +4,6 @@
     <list default="true" id="e32c230c-ee35-457a-a40a-8dcd6926dab9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contracts/YamswapPair.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/YamswapPair.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/libraries/Math.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/libraries/Math.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -51,13 +51,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -73,7 +75,8 @@
       <updated>1603174251120</updated>
       <workItem from="1603174252906" duration="16114000" />
       <workItem from="1603274063993" duration="6409000" />
-      <workItem from="1605064645694" duration="9006000" />
+      <workItem from="1605064645694" duration="9392000" />
+      <workItem from="1605242202638" duration="3172000" />
     </task>
     <servers />
   </component>
@@ -88,5 +91,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="325" y="215" key="IDE.errors.dialog/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605065068488" />
+    <state x="212" y="25" width="1255" height="903" key="SettingsEditor" timestamp="1605248096456">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="212" y="25" width="1255" height="903" key="SettingsEditor/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605248096456" />
   </component>
 </project>

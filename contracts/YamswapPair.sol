@@ -60,6 +60,8 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
         require(success && (data.length == 0 || abi.decode(data, (bool))), 'Yamswap: TRANSFER_FAILED');
     }
 
+    event Mint(address indexed sender, uint amount0, uint amount1);
+
     event Swap(
         address indexed sender,
         uint amount0In,
@@ -118,6 +120,29 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
         }
     }
 
+    function mint(address to) external lock returns (uint liquidity) {
+        (uint112 _reserve0, uint112 _reserve1, ) = getReserves();
+        uint balance0 = IERC20(token0).balanceOf(address(this));
+        uint balance1 = IERC20(token1).balanceOf(address(this));
+        uint amount0 = balance0.sub(reserve0);
+        uint amount1 = balance1.sub(reserve1);
+
+        bool feeOn =_mintFee(_reserve0, _reserve1);
+        uint _totalSupply = totalSupply;
+        if(_totalSupply == 0) {
+            liquidity = Math.sqrt(amount0.mul(amount1)).sub(MINIMUM_LIQUIDITY);
+            _mint(address(0), MINIMUM_LIQUIDITY);
+        } else {
+            liquidity = Math.min(amount0.mul(_totalSupply) / _reserve0, amount1.mul(_totalSupply) / _reserve1);
+        }
+        require(liquidity > 0, 'Yamswap: INSUFFICIENT_LIQUIDITY_MINTED');
+        _mint(to, liquidity);
+
+        _update(balance0, balance1, _reserve0, _reserve1);
+        if (feeOn) kLast = uint(reserve0).mul(reserve1);
+        emit Mint(msg.sender, amount0, amount1);
+    }
+
     function swap(uint amount0Out, uint amount1Out, address to, bytes calldata data) external lock {
         require(amount0Out > 0 || amount1Out > 0, 'Yamswap: INSUFFICIENT_OUTPUT_AMOUNT');
         (uint112 _reserve0, uint112 _reserve1, ) = getReserves(); // 节约gas
@@ -150,6 +175,19 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
         }
         _update(balance0, balance1, _reserve0, _reserve1);
         emit Swap(msg.sender, amount0In, amount1In, amount0Out, amount1Out, to);
+    }
+
+    // 强制余额与储备金相等
+    function skim(address to) external lock {
+        address _token0 = token0;
+        address _token1 = token1;
+        _safeTransfer(_token0, to, IERC20(_token0).balanceOf(address(this)).sub(reserve0));
+        _safeTransfer(_token1, to, IERC20(_token1).balanceOf(address(this)).sub(reserve1));
+    }
+
+    // 强制储备金与余额相等
+    function sync() external lock {
+        _update(IERC20(token0).balanceOf(address(this)), IERC20(token1).balanceOf(address(this)), reserve0, reserve1);
     }
 
 }
