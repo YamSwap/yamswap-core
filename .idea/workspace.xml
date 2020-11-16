@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="e32c230c-ee35-457a-a40a-8dcd6926dab9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/YamswapPair.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/YamswapPair.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapCallee.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapCallee.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapFactory.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapFactory.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapPair.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapPair.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Math.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Math.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Migrations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/SafeMath.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/UQ112x112.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/UQ112x112.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapFactory.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/YamswapFactory.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapPair.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/YamswapPair.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/YamswapFactory.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/YamswapFactory.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +62,19 @@
       <recent name="$PROJECT_DIR$/contracts/interface" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +88,7 @@
       <workItem from="1605064645694" duration="9392000" />
       <workItem from="1605242202638" duration="4790000" />
       <workItem from="1605254273235" duration="130000" />
-      <workItem from="1605254427409" duration="2532000" />
+      <workItem from="1605254427409" duration="5073000" />
     </task>
     <servers />
   </component>
@@ -74,10 +99,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="325" y="215" key="IDE.errors.dialog" timestamp="1605254396322">
+    <state x="325" y="215" key="IDE.errors.dialog" timestamp="1605506791687">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="325" y="215" key="IDE.errors.dialog/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605254396322" />
+    <state x="325" y="215" key="IDE.errors.dialog/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605506791687" />
     <state x="212" y="25" width="1255" height="903" key="SettingsEditor" timestamp="1605248096456">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

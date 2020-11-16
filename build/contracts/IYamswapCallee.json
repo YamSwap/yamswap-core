@@ -43,14 +43,14 @@
     "absolutePath": "/Users/a186r/dev/yamswap/yamswap-core/contracts/interface/IYamswapCallee.sol",
     "exportedSymbols": {
       "IYamswapCallee": [
-        1120
+        1736
       ]
     },
-    "id": 1121,
+    "id": 1737,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1108,
+        "id": 1724,
         "literals": [
           "solidity",
           ">=",
@@ -69,9 +69,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1120,
+        "id": 1736,
         "linearizedBaseContracts": [
-          1120
+          1736
         ],
         "name": "IYamswapCallee",
         "nodeType": "ContractDefinition",
@@ -79,22 +79,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1119,
+            "id": 1735,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "yamswapCall",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1117,
+              "id": 1733,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1110,
+                  "id": 1726,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1119,
+                  "scope": 1735,
                   "src": "86:14:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -103,7 +103,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1109,
+                    "id": 1725,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "86:7:5",
@@ -118,10 +118,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1112,
+                  "id": 1728,
                   "name": "amount0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1119,
+                  "scope": 1735,
                   "src": "102:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -130,7 +130,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1111,
+                    "id": 1727,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "102:4:5",
@@ -144,10 +144,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1114,
+                  "id": 1730,
                   "name": "amount1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1119,
+                  "scope": 1735,
                   "src": "116:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -156,7 +156,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1113,
+                    "id": 1729,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "116:4:5",
@@ -170,10 +170,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1116,
+                  "id": 1732,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1119,
+                  "scope": 1735,
                   "src": "130:19:5",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -182,7 +182,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1115,
+                    "id": 1731,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "130:5:5",
@@ -198,19 +198,19 @@
               "src": "85:65:5"
             },
             "returnParameters": {
-              "id": 1118,
+              "id": 1734,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "159:0:5"
             },
-            "scope": 1120,
+            "scope": 1736,
             "src": "65:95:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1121,
+        "scope": 1737,
         "src": "34:128:5"
       }
     ],
@@ -220,14 +220,14 @@
     "absolutePath": "/Users/a186r/dev/yamswap/yamswap-core/contracts/interface/IYamswapCallee.sol",
     "exportedSymbols": {
       "IYamswapCallee": [
-        1120
+        1736
       ]
     },
-    "id": 1121,
+    "id": 1737,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1108,
+        "id": 1724,
         "literals": [
           "solidity",
           ">=",
@@ -246,9 +246,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1120,
+        "id": 1736,
         "linearizedBaseContracts": [
-          1120
+          1736
         ],
         "name": "IYamswapCallee",
         "nodeType": "ContractDefinition",
@@ -256,22 +256,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1119,
+            "id": 1735,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "yamswapCall",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1117,
+              "id": 1733,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1110,
+                  "id": 1726,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1119,
+                  "scope": 1735,
                   "src": "86:14:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -280,7 +280,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1109,
+                    "id": 1725,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "86:7:5",
@@ -295,10 +295,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1112,
+                  "id": 1728,
                   "name": "amount0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1119,
+                  "scope": 1735,
                   "src": "102:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -307,7 +307,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1111,
+                    "id": 1727,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "102:4:5",
@@ -321,10 +321,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1114,
+                  "id": 1730,
                   "name": "amount1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1119,
+                  "scope": 1735,
                   "src": "116:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -333,7 +333,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1113,
+                    "id": 1729,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "116:4:5",
@@ -347,10 +347,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1116,
+                  "id": 1732,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1119,
+                  "scope": 1735,
                   "src": "130:19:5",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -359,7 +359,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1115,
+                    "id": 1731,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "130:5:5",
@@ -375,19 +375,19 @@
               "src": "85:65:5"
             },
             "returnParameters": {
-              "id": 1118,
+              "id": 1734,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "159:0:5"
             },
-            "scope": 1120,
+            "scope": 1736,
             "src": "65:95:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1121,
+        "scope": 1737,
         "src": "34:128:5"
       }
     ],
@@ -399,7 +399,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-11-12T09:45:44.471Z",
+  "updatedAt": "2020-11-16T06:06:52.970Z",
   "devdoc": {
     "methods": {}
   },
