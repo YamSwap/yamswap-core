@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32c230c-ee35-457a-a40a-8dcd6926dab9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/test/ERC20.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/shared/utilities.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.waffle.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/YamswapERC20.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapCallee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapFactory.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapPair.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Math.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/UQ112x112.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapFactory.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapPair.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/shared/utilities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/shared/utilities.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +93,7 @@
       <workItem from="1605064645694" duration="9392000" />
       <workItem from="1605242202638" duration="4790000" />
       <workItem from="1605254273235" duration="130000" />
-      <workItem from="1605254427409" duration="5778000" />
+      <workItem from="1605254427409" duration="7837000" />
     </task>
     <servers />
   </component>
@@ -93,6 +104,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1625" height="282" key="GridCell.Tab.0.bottom" timestamp="1605507571369">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1625" height="282" key="GridCell.Tab.0.bottom/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605507571369" />
+    <state width="1625" height="282" key="GridCell.Tab.0.center" timestamp="1605507571367">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1625" height="282" key="GridCell.Tab.0.center/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605507571367" />
+    <state width="1625" height="282" key="GridCell.Tab.0.left" timestamp="1605507571365">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1625" height="282" key="GridCell.Tab.0.left/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605507571365" />
+    <state width="1625" height="282" key="GridCell.Tab.0.right" timestamp="1605507571368">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1625" height="282" key="GridCell.Tab.0.right/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605507571368" />
     <state x="325" y="215" key="IDE.errors.dialog" timestamp="1605506791687">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -101,5 +128,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="212" y="25" width="1255" height="903" key="SettingsEditor/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605248096456" />
+    <state x="469" y="238" width="742" height="574" key="find.popup" timestamp="1605507808587">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="469" y="238" width="742" height="574" key="find.popup/0.0.1680.1050/-1920.-150.1920.1200@0.0.1680.1050" timestamp="1605507808587" />
   </component>
 </project>
