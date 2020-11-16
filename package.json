@@ -1,0 +1,45 @@
+{
+  "name": "yamswap-core",
+  "version": "1.0.0",
+  "description": "core contract for the Yamswap protocol",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YamSwap/yamswap-core.git"
+  },
+  "keywords": [
+    "yamswap"
+  ],
+  "author": "a186r",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YamSwap/yamswap-core/issues"
+  },
+  "files": [
+    "contracts",
+    "build"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^2.4.1",
+    "ethereumjs-util": "^6.2.0",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "solc": "0.5.16",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "homepage": "https://github.com/YamSwap/yamswap-core#readme"
+}

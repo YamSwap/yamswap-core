@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32c230c-ee35-457a-a40a-8dcd6926dab9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/test/ERC20.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/shared/utilities.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/IERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC20.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapCallee.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapCallee.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapERC20.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapFactory.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapFactory.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/IYamswapPair.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IYamswapPair.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/Math.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Math.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Migrations.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/SafeMath.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/UQ112x112.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/UQ112x112.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/YamswapERC20.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapFactory.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/YamswapFactory.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contracts/YamswapPair.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/YamswapPair.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/YamswapFactory.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/YamswapFactory.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Solidity Contract" />
         <option value="Solidity Library" />
+        <option value="Solidity Contract" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -56,6 +49,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -88,7 +82,7 @@
       <workItem from="1605064645694" duration="9392000" />
       <workItem from="1605242202638" duration="4790000" />
       <workItem from="1605254273235" duration="130000" />
-      <workItem from="1605254427409" duration="5073000" />
+      <workItem from="1605254427409" duration="5778000" />
     </task>
     <servers />
   </component>
