@@ -53,4 +53,20 @@ describe('YamswapFactory', () => {
   it('createPair', async () => {
     await createPair(TEST_ADDRESSES)
   })
+
+  it('createPair:reverse', async () => {
+    await createPair(TEST_ADDRESSES.slice().reverse() as [string, string])
+  })
+
+  it('createPair:gas', async () => {
+    const tx = await factory.createPair(...TEST_ADDRESSES)
+    const receipt = await tx.wait()
+    expect(receipt.gasUsed).to.eq(0x2663d7)
+  })
+
+  it('setFeeTo', async () => {
+    await expect(factory.connect(other).setFeeTo(other.address)).to.be.revertedWith('Yamswap: FORBIDDEN')
+    await factory.setFeeTo(wallet.address)
+    expect(await factory.feeTo()).to.eq(wallet.address)
+  })
 })
