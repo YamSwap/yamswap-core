@@ -14,7 +14,9 @@ const PERMIT_TYPEHASH = keccak256(
     toUtf8Bytes('Permit(address owner, address spender, uint256 value, uint256 nonce, uint256 deadline)')
 )
 
+// 数字扩大为18位
 export function expandTo18Decimals(n: number): BigNumber {
+    // n * 10的18次方
     return bigNumberify(n).mul(bigNumberify(10).pow(18))
 }
 
