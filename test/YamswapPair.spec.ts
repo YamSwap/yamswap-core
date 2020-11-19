@@ -164,5 +164,11 @@ describe('YamswapPair', () => {
     expect(await token1.balanceOf(wallet.address)).to.eq(totalSupplyToken1.sub(token1Amount).sub(swapAmount))
   })
 
+  it('swap: gas', async () => {
+    const token0Amount = expandTo18Decimals(5)
+    const token1Amount = expandTo18Decimals(10)
+    await addLiquidity(token0Amount, token1Amount)
 
+    // await mineBlock(provider, (await provider.getBlock('latest')).timestamp + 1)
+  })
 })
