@@ -179,7 +179,7 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
         {
             address _token0 = token0;
             address _token1 = token1;
-            require(to != _token0 && to != token1, 'Yamswap: INVALID_TO');
+            require(to != _token0 && to != _token1, 'Yamswap: INVALID_TO');
             if (amount0Out > 0) _safeTransfer(_token0, to, amount0Out);
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out);
             if (data.length > 0) IYamswapCallee(to).yamswapCall(msg.sender, amount0Out, amount1Out, data);
@@ -187,8 +187,8 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
             balance1 = IERC20(_token1).balanceOf(address(this));
         }
 
-        uint amount0In = balance0 > reserve0 - amount0Out ? balance0 - (_reserve0 - amount0Out) : 0;
-        uint amount1In = balance1 > reserve1 - amount1Out ? balance1 - (_reserve1 - amount1Out) : 0;
+        uint amount0In = balance0 > _reserve0 - amount0Out ? balance0 - (_reserve0 - amount0Out) : 0;
+        uint amount1In = balance1 > _reserve1 - amount1Out ? balance1 - (_reserve1 - amount1Out) : 0;
         require(amount0In > 0 || amount1In > 0, 'Yamswap: INSUFFICIENT_INPUT_AMOUNT');
 
         // 存储更新后的的储备金，防止堆栈过深
