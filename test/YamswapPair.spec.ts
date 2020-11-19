@@ -3,7 +3,7 @@ import {Contract} from 'ethers'
 import { BigNumber, bigNumberify } from 'ethers/utils'
 import { solidity, MockProvider, createFixtureLoader } from 'ethereum-waffle'
 import {pairFixture} from './shared/fixtures'
-import { expandTo18Decimals } from './shared/utilities'
+import { expandTo18Decimals, mineBlock } from './shared/utilities'
 import {AddressZero} from 'ethers/constants'
 
 // 最小流动性 10的3次方
@@ -169,6 +169,15 @@ describe('YamswapPair', () => {
     const token1Amount = expandTo18Decimals(10)
     await addLiquidity(token0Amount, token1Amount)
 
-    // await mineBlock(provider, (await provider.getBlock('latest')).timestamp + 1)
+    await mineBlock(provider, (await provider.getBlock('latest')).timestamp + 1)
+    await pair.sync(overrides)
+
+    const swapAmount = expandTo18Decimals(1)
+    const expectedOutputAmount = bigNumberify('453305446940074565')
+    await token1.transfer(pair.address, swapAmount)
+    await mineBlock(provider, (await provider.getBlock('latest')).timestamp + 1)
+    const tx = await pair.swap(expectedOutputAmount, 0, wallet.address, '0x', overrides)
+    const receipt = await tx.wait()
+    expect(receipt.gasUsed).to.eq(73462)
   })
 })
