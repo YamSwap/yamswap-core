@@ -25,6 +25,9 @@ contract YamswapERC20 is IYamswapERC20{
     bytes32 public constant PERMIT_TYPEHASH = 0xbcfe842af433e89e24d17a1a7a9b9329d770cad1759e9df0671d74b3e911fc10;
     mapping(address => uint) public nonces;
 
+    event Approval(address indexed owner, address indexed spender, uint value);
+    event Transfer(address indexed owner, address indexed to, uint value);
+
     constructor() public {
         uint chainId;
         assembly {
