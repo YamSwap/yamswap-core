@@ -221,5 +221,26 @@ describe('YamswapPair', () => {
 
     const initialPrice = encodePrice(token0Amount, token1Amount)
     expect(await pair.price0CumulativeLast()).to.eq(initialPrice[0])
+    expect(await pair.price1CumulativeLast()).to.eq(initialPrice[1])
+    expect((await pair.getReserves())[2]).to.eq(blockTimestamp + 1)
+
+    const swapAmount = expandTo18Decimals(3)
+    await token0.transfer(pair.address, swapAmount)
+    await mineBlock(provider, blockTimestamp + 10)
+
+    await pair.swap(0, expandTo18Decimals(1), wallet.address, '0x', overrides)
+
+    expect(await pair.price0CumulativeLast()).to.eq(initialPrice[0].mul(10))
+    expect(await pair.price1CumuLativeLast()).to.eq(initialPrice[1].mul(10))
+    expect((await pair.getReserves())[2]).to.eq(blockTimestamp + 10)
+
+    await mineBlock(provider, blockTimestamp + 20)
+    await pair.sync(overrides)
+
+    const newPrice = encodePrice(expandTo18Decimals(6), expandTo18Decimals(2))
+    expect(await pair.price0CumulativeLast()).to.eq(initialPrice[0].mul(10).add(newPrice[0].mul(10)))
+    expect(await pair.price1CumulativeLast()).to.eq(initialPrice[1].mul(10).add(newPrice[1].mul(10)))
+    expect((await pair.getReserves())[2]).to.eq(blockTimestamp + 20)
+
   })
 })
