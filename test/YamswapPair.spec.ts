@@ -3,7 +3,7 @@ import {Contract} from 'ethers'
 import { BigNumber, bigNumberify } from 'ethers/utils'
 import { solidity, MockProvider, createFixtureLoader } from 'ethereum-waffle'
 import {pairFixture} from './shared/fixtures'
-import { expandTo18Decimals, mineBlock } from './shared/utilities'
+import { expandTo18Decimals, mineBlock, encodePrice } from './shared/utilities'
 import {AddressZero} from 'ethers/constants'
 
 // 最小流动性 10的3次方
@@ -208,5 +208,18 @@ describe('YamswapPair', () => {
     const totalSupplyToken1 = await token1.totalSupply()
     expect(await token0.balanceOf(wallet.address)).to.eq(totalSupplyToken0.sub(1000))
     expect(await token1.balanceOf(wallet.address)).to.eq(totalSupplyToken1.sub(1000))
+  })
+
+  it('price{0,1}CumulativeLast', async () => {
+    const token0Amount = expandTo18Decimals(3)
+    const token1Amount = expandTo18Decimals(3)
+    await addLiquidity(token0Amount, token1Amount)
+
+    const blockTimestamp = (await pair.getReserves())[2]
+    await mineBlock(provider, blockTimestamp + 1)
+    await pair.sync(overrides)
+
+    const initialPrice = encodePrice(token0Amount, token1Amount)
+    expect(await pair.price0CumulativeLast()).to.eq(initialPrice[0])
   })
 })
