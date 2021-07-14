@@ -15,10 +15,10 @@ import "./interface/IERC20.sol";
 import "./interface/IYamswapCallee.sol";
 import "./interface/IYamswapFactory.sol";
 import "./libraries/Math.sol";
-import "./interface/IYamswapPair.sol";
+// import "./interface/IYamswapPair.sol";
 import "./YamswapERC20.sol";
 
-contract YamswapPair is IYamswapPair, YamswapERC20{
+contract YamswapPair is YamswapERC20{
 
     using SafeMath for uint;
     using UQ112x112 for uint224;
@@ -75,7 +75,7 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
 
     event Sync(uint112 reserve0, uint112 reserve1);
 
-    constructor() public {
+    constructor() {
         factory = msg.sender;
     }
 
@@ -89,7 +89,7 @@ contract YamswapPair is IYamswapPair, YamswapERC20{
     // 更新储备，并且在每个区块第一次调用时累计价格，这里涉及到时间加权的平均价格计算
     function _update(uint balance0, uint balance1, uint112 _reserve0, uint112 _reserve1) private {
         // 判断balance的值是否溢出
-        require(balance0 <= uint112(-1) && balance1 <= uint112(-1), 'Yamswap: OVERFLOW');
+        require(balance0 <= type(uint112).max && balance1 <= type(uint112).max, 'Yamswap: OVERFLOW');
         uint32 blockTimestamp = uint32(block.timestamp % 2**32);
         uint32 timeElapsed = blockTimestamp - blockTimestampLast; // overflow is desired
         if(timeElapsed > 0 && _reserve0 != 0 && _reserve1 != 0) {

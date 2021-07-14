@@ -9,10 +9,12 @@
 
 pragma solidity >=0.4.21 <0.9.0;
 
-import "./interface/IYamswapFactory.sol";
+// import "./interface/IYamswapFactory.sol";
 import "./YamswapPair.sol";
+import "./interface/IYamswapPair.sol";
 
-contract YamswapFactory is IYamswapFactory{
+
+contract YamswapFactory {
     address public feeTo;
     address public feeToSetter;
 
@@ -21,7 +23,7 @@ contract YamswapFactory is IYamswapFactory{
 
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
-    constructor(address _feeToSetter) public {
+    constructor(address _feeToSetter) {
         feeToSetter = _feeToSetter;
     }
 

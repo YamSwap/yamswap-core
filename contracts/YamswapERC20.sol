@@ -15,27 +15,27 @@ import "./libraries/SafeMath.sol";
 contract YamswapERC20 is IYamswapERC20{
     using SafeMath for uint;
 
-    string public constant name = 'Yamswap';
-    string public constant symbol = 'YAM';
-    uint8 public constant decimals = 18;
-    uint public totalSupply;
-    mapping(address => uint) public balanceOf;
-    mapping(address => mapping(address => uint)) public allowance;
+    string override public constant name = 'Yamswap';
+    string override public constant symbol = 'YAM';
+    uint8 override public constant decimals = 18;
+    uint override public totalSupply;
+    mapping(address => uint) override public balanceOf;
+    mapping(address => mapping(address => uint)) override public allowance;
 
-    bytes32 public DOMAIN_SEPARATOR;
+    bytes32 public override DOMAIN_SEPARATOR;
 //    keccak256("Permit(address owner, address spender, uint256 value, uint256 nonce, uint256 deadline)");
 //0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9
 //0xbcfe842af433e89e24d17a1a7a9b9329d770cad1759e9df0671d74b3e911fc10
-    bytes32 public constant PERMIT_TYPEHASH = 0xbcfe842af433e89e24d17a1a7a9b9329d770cad1759e9df0671d74b3e911fc10;
-    mapping(address => uint) public nonces;
+    bytes32 public constant override PERMIT_TYPEHASH = 0xbcfe842af433e89e24d17a1a7a9b9329d770cad1759e9df0671d74b3e911fc10;
+    mapping(address => uint) public override nonces;
 
-    event Approval(address indexed owner, address indexed spender, uint value);
-    event Transfer(address indexed from, address indexed to, uint value);
+    // event Approval(address indexed owner, address indexed spender, uint value);
+    // event Transfer(address indexed from, address indexed to, uint value);
 
-    constructor() public {
+    constructor() {
         uint chainId;
         assembly {
-            chainId := chainid
+            chainId := 1
 
         }
         DOMAIN_SEPARATOR = keccak256(
@@ -72,25 +72,25 @@ contract YamswapERC20 is IYamswapERC20{
         emit Transfer(from, to, value);
     }
 
-    function approve(address spender, uint value) external returns (bool) {
+    function approve(address spender, uint value) override external returns (bool) {
         _approve(msg.sender, spender, value);
         return true;
     }
 
-    function transfer(address to, uint value) external returns (bool) {
+    function transfer(address to, uint value) override external returns (bool) {
         _transfer(msg.sender, to, value);
         return true;
     }
 
-    function transferFrom(address from, address to, uint value) external returns (bool) {
-        if (allowance[from][msg.sender] != uint(-1)) {
+    function transferFrom(address from, address to, uint value) override external returns (bool) {
+        if (allowance[from][msg.sender] != type(uint128).max) {
             allowance[from][msg.sender] = allowance[from][msg.sender].sub(value);
         }
         _transfer(from, to, value);
         return true;
     }
 
-    function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
+    function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) override external {
         require(deadline >= block.timestamp, 'Yamswap: EXPIRED');
         bytes32 digest = keccak256(
             abi.encodePacked(

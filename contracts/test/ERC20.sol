@@ -12,7 +12,7 @@ pragma solidity >=0.4.21 <0.9.0;
 import "../YamswapERC20.sol";
 
 contract ERC20 is YamswapERC20 {
-    constructor(uint _totalSupply) public {
+    constructor(uint _totalSupply) {
         _mint(msg.sender, _totalSupply);
     }
 }
