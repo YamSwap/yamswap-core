@@ -1,4 +1,6 @@
-pragma solidity >=0.4.21 <0.7.0;
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.4.21 <0.9.0;
 
 library UQ112x112 {
     // uint224 = 2**112;

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 /**
  * @program: yamswap-core
  * @description: 
@@ -5,7 +7,7 @@
  * @create: 2020-10-20
  **/
 
-pragma solidity >=0.4.21 <0.7.0;
+pragma solidity >=0.4.21 <0.9.0;
 
 import "./interface/IYamswapERC20.sol";
 import "./libraries/SafeMath.sol";
@@ -34,6 +36,7 @@ contract YamswapERC20 is IYamswapERC20{
         uint chainId;
         assembly {
             chainId := chainid
+
         }
         DOMAIN_SEPARATOR = keccak256(
             abi.encode(

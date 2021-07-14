@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 /**
  * @program: yamswap-core
  * @description: 
@@ -5,7 +7,7 @@
  * @create: 2020-10-21
  **/
 
-pragma solidity >=0.4.21 <0.7.0;
+pragma solidity >=0.4.21 <0.9.0;
 
 import "./interface/IYamswapFactory.sol";
 import "./YamswapPair.sol";

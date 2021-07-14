@@ -14,6 +14,7 @@
     "clean": "rimraf ./build/",
     "precompile": "yarn clean",
     "compile": "waffle .waffle.json",
+    "build": "waffle",
     "pretest": "yarn compile",
     "test": "mocha",
     "prepublishOnly": "yarn test"
@@ -32,17 +33,19 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.6",
-    "@types/mocha": "^5.2.7",
-    "chai": "^4.2.0",
-    "ethereum-waffle": "^2.4.1",
-    "ethereumjs-util": "^6.2.0",
-    "mocha": "^6.2.2",
-    "prettier": "^1.19.1",
-    "rimraf": "^3.0.0",
-    "solc": "0.5.16",
-    "ts-node": "^8.5.4",
-    "typescript": "^3.7.3"
+    "@openzeppelin/contracts": "^4.2.0",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^8.2.3",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethereumjs-util": "^7.1.0",
+    "ethers": "^5.4",
+    "mocha": "^9.0.2",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "solc": "0.8.6",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
   },
   "homepage": "https://github.com/YamSwap/yamswap-core#readme",
   "license": "MIT"
