@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.21 <0.9.0;
 
-import './IYamswapV2Router01.sol';
+import './IYamswapRouter01.sol';
 
-interface IYamswapV2Router02 is IYamswapV2Router01 {
+interface IYamswapRouter02 is IYamswapRouter01 {
     function removeLiquidityETHSupportingFeeOnTransferTokens(
         address token,
         uint liquidity,

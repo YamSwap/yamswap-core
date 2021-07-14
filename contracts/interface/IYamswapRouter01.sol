@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.21 <0.9.0;
 
-interface IYamswapV2Router01 {
-    function factory() external pure returns (address);
-    function WETH() external pure returns (address);
+interface IYamswapRouter01 {
+    function factory() external view returns (address);
+    function WETH() external view returns (address);
 
     function addLiquidity(
         address tokenA,
