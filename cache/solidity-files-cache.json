@@ -1,0 +1,687 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/a186r/dev/resume/yamswap-core/contracts/interface/IERC20.sol": {
+      "lastModificationDate": 1626313720716,
+      "contentHash": "865737864d4cebd009c549dc27096ae7",
+      "sourceName": "contracts/interface/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/YamswapRouter02.sol": {
+      "lastModificationDate": 1626313720712,
+      "contentHash": "837662f7d2584a53b42da0c00fa7a985",
+      "sourceName": "contracts/YamswapRouter02.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/IYamswapFactory.sol",
+        "./libraries/TransferHelper.sol",
+        "./libraries/YamswapLibrary.sol",
+        "./interface/IYamswapRouter02.sol",
+        "./interface/IERC20.sol",
+        "./interface/IWETH.sol",
+        "./libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "YamswapRouter02"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/interface/IYamswapFactory.sol": {
+      "lastModificationDate": 1626313720724,
+      "contentHash": "39672028861153d20cf54a0433f37998",
+      "sourceName": "contracts/interface/IYamswapFactory.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IYamswapFactory"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1626313720739,
+      "contentHash": "2b340872215e313cd5edd6916bff8ffb",
+      "sourceName": "contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/libraries/YamswapLibrary.sol": {
+      "lastModificationDate": 1626313720743,
+      "contentHash": "a2ca59878aebe6516351b01b8dcc43dc",
+      "sourceName": "contracts/libraries/YamswapLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IYamswapPair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "YamswapLibrary"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/interface/IYamswapRouter02.sol": {
+      "lastModificationDate": 1626313720731,
+      "contentHash": "e4fbdb6e36cadbe677c6bf0a5b38db0b",
+      "sourceName": "contracts/interface/IYamswapRouter02.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IYamswapRouter01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IYamswapRouter02"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/interface/IWETH.sol": {
+      "lastModificationDate": 1626313720718,
+      "contentHash": "aca3a7cb5c5c4e5288964b40cdd39a28",
+      "sourceName": "contracts/interface/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/libraries/SafeMath.sol": {
+      "lastModificationDate": 1626313720737,
+      "contentHash": "e026874c71ef883b63c9074480808201",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/interface/IYamswapPair.sol": {
+      "lastModificationDate": 1626313720726,
+      "contentHash": "737e7dd1d873949a330b3e380a71ad20",
+      "sourceName": "contracts/interface/IYamswapPair.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IYamswapPair"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/interface/IYamswapRouter01.sol": {
+      "lastModificationDate": 1626313720729,
+      "contentHash": "158e97060dde36f490574d6807afd90b",
+      "sourceName": "contracts/interface/IYamswapRouter01.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IYamswapRouter01"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/YamswapPair.sol": {
+      "lastModificationDate": 1626313720709,
+      "contentHash": "83d0f1330ea3931f03dedbeaa6082d9d",
+      "sourceName": "contracts/YamswapPair.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./libraries/SafeMath.sol",
+        "./libraries/UQ112x112.sol",
+        "./interface/IERC20.sol",
+        "./interface/IYamswapCallee.sol",
+        "./interface/IYamswapFactory.sol",
+        "./libraries/Math.sol",
+        "./YamswapERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "YamswapPair"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/libraries/UQ112x112.sol": {
+      "lastModificationDate": 1626313720741,
+      "contentHash": "e766c462509d0b308da9c3c4ba719de3",
+      "sourceName": "contracts/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/interface/IYamswapCallee.sol": {
+      "lastModificationDate": 1626313720720,
+      "contentHash": "b0ef2aab1ca21863b96cbecece6b801a",
+      "sourceName": "contracts/interface/IYamswapCallee.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IYamswapCallee"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/libraries/Math.sol": {
+      "lastModificationDate": 1626313720734,
+      "contentHash": "f29149cd3015268e9f0d160c79aba273",
+      "sourceName": "contracts/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/YamswapERC20.sol": {
+      "lastModificationDate": 1626313720705,
+      "contentHash": "8dff54ce7f0f1ea5dc6b3c84d3d32c4a",
+      "sourceName": "contracts/YamswapERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/IYamswapERC20.sol",
+        "./libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "YamswapERC20"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/interface/IYamswapERC20.sol": {
+      "lastModificationDate": 1626313720723,
+      "contentHash": "561fde09b33264ddc6af16d2fe8d29f4",
+      "sourceName": "contracts/interface/IYamswapERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IYamswapERC20"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/test/ERC20.sol": {
+      "lastModificationDate": 1626313720747,
+      "contentHash": "76a5df29eced9bf1d1483bc5d52ca71b",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../YamswapERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/YamswapRouter01.sol": {
+      "lastModificationDate": 1626313720711,
+      "contentHash": "fe2930be857c2e943b16a6c965bceda0",
+      "sourceName": "contracts/YamswapRouter01.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/IYamswapFactory.sol",
+        "./libraries/TransferHelper.sol",
+        "./libraries/YamswapLibrary.sol",
+        "./interface/IYamswapRouter01.sol",
+        "./interface/IERC20.sol",
+        "./interface/IWETH.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "YamswapRouter01"
+      ]
+    },
+    "/home/a186r/dev/resume/yamswap-core/contracts/YamswapFactory.sol": {
+      "lastModificationDate": 1626313720707,
+      "contentHash": "d654f2d16d9d7235c5795b7a934f7fcf",
+      "sourceName": "contracts/YamswapFactory.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./YamswapPair.sol",
+        "./interface/IYamswapPair.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "YamswapFactory"
+      ]
+    }
+  }
+}

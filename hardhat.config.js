@@ -8,7 +8,7 @@ const ALCHEMY_API_KEY = "8cpz4GUsIE7yt_-KR_X7XreAbrdX4dVn";
 // To export your private key from Metamask, open Metamask and
 // go to Account Details > Export Private Key
 // Be aware of NEVER putting real Ether into testing accounts
-const ROPSTEN_PRIVATE_KEY = "01508c206014891eb5639afad2fd98f4dbe7ee2ec7e0bfad8a4266713ca0bd36";
+const ROPSTEN_PRIVATE_KEY = "26ac8cc1c2455de82e56d1373ac7490911665ab1e21c539f0c47f80161885afe";
 
 module.exports = {
   solidity: "0.8.4",
